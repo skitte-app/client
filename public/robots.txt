@@ -1,0 +1,7 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+<<<<<<< HEAD
+Disallow: /admin/
+=======
+Disallow:
+>>>>>>> 08ed0182c24945237a869356336a8ace0b50b7aa

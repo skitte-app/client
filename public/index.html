@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/media/logo/favicon.ico" />
+    <meta
+      name="viewport"
+      content="minimum-scale=1, initial-scale=1, width=device-width"
+    />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/media/logo/favicon.ico" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>Skitte</title>
+  </head>
+
+  <body class="antialiased overflow-y-hidden text-slate-500 dark:text-slate-400 bg-white dark:bg-slate-900">
+    <!-- <body class="background-skin"> -->
+    <noscript
+      >Sorry :( => You need to enable JavaScript to run this app.</noscript
+    >
+    <div class="Skitte">
+      <!-- <div class="skitte-search"></div> -->
+      <!-- <div id="skitte-navbar" data-username="divine" data-is_authenticated="yah"></div> -->
+      <!-- <div class="skitte-profile-badge" data-username="divine" data-canSkit="true" data-user="divine" data-is_authenticated="yah"></div>  -->
+      <!-- <div class="skitte-detail" data-skit-url="divine-posted-hhhhhhhhhhhhhhhhhhhhhhhhhhbbbbbbbbbbbbbbuuuuuuuuughjkbhjvhjkvukhvhvxhvhjxvhjxvhjxxx11111111111111111111222222222222222222221111111111gh-3i9s" data-class-name="col-6 mx-auto" data-is_authenticated="yah" data-canSkit="false"></div> -->
+      <!-- <div id="skit-container" class="d-none"></div> -->
+      <!-- <div id="skitte-profile-edit" data-username="divine"></div>  -->
+      <!-- <div id="skitte-feed" data-username="divine" data-is_authenticated="yah"></div> -->
+      <!-- <div class="skitte-friends d-none" data-username="divine"></div> -->
+      <div id="skitte" data-username="divine" data-is_authenticated="yah"></div>
+      <div id="skitte-app"></div>
+      <div
+        class="image-viewer-overlay w-full h-screen fixed top-0 left-0 bg-gray-200 none"
+      ></div>
+      <div class="image-viewer w-full h-screen fixed top-0 left-0 none">
+        <div
+          class="image-viewer-close absolute right-0 mr-2 cursor-pointer pointer-events-auto hover:text-red-200"
+        ></div>
+        <figure class="image-viewer-figure bg-contain pointer-events-none">
+          <img
+            src="#"
+            alt="#"
+            class="m-auto h-screen image-viewer-image opacity-0 pointer-events-auto"
+          />
+        </figure>
+      </div>
+
+      <!-- Alert -->
+      <div class="skt-alert-overlay none"></div>
+      <div class="skt-alert-wrap none">
+        <div class="skt-alert absolute p-3 rounded-lg">
+          <span class="skt-alert-msg"></span>
+          <div class="flex justify-end mt-7 skt-alert-btn"></div>
+        </div>
+      </div>
+      <!-- <div id="skitte" data-username="divine" data-is_authenticated="yah"></div> -->
+    </div>
+    <!-- Not Compartable -->
+    <div id="cDevice"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+    <!-- <script src="%PUBLIC_URL%/js/bootstrap.js"></script> -->
+    <script src="%PUBLIC_URL%/js/jquery.js"></script>
+
+    <script>
+      var path = window.location.pathname;
+      var idRegex = /(?<skiturl>\d+)/;
+      var match = path.match(idRegex);
+
+      if (match) {
+        var skitUrl = match.groups.skiturl;
+        var appEL = document.getElementById("skitte");
+        if (appEL) {
+          appEL.class = "user-profile";
+          var skitEL = `<div class="skitte-detail" data-skit-url="${skitUrl}" data-class-name="col-6 mx-auto"></div>`;
+          var mainContainer = document.getElementById("skit-container");
+          if (skitEL) {
+            mainContainer.innerHTML = skitEL;
+          }
+        }
+      }
+    </script>
+  </body>
+</html>

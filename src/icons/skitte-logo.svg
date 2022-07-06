@@ -1,0 +1,64 @@
+<svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="536"
+                    height="128"
+                    viewBox="0 0 536 128"
+                  >
+                    <g id="skitte-logo" transform="translate(-506.535 -370)">
+                      <g
+                        id="Rectangle_1"
+                        data-name="Rectangle 1"
+                        transform="translate(506.535 374)"
+                        fill="none"
+                        stroke="#707070"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="3"
+                      >
+                        <rect
+                          width="536"
+                          height="120"
+                          rx="60"
+                          stroke="none"
+                        ></rect>
+                        <rect
+                          x="1.5"
+                          y="1.5"
+                          width="533"
+                          height="117"
+                          rx="58.5"
+                          fill="none"
+                        ></rect>
+                      </g>
+                      <text
+                        id="Skitte"
+                        transform="translate(699.535 374)"
+                        fill="none"
+                        stroke="#707070"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="4"
+                        stroke-dasharray="5"
+                        font-size="89"
+                        font-family="MicrosoftYaHeiUI-Bold, Microsoft YaHei UI"
+                        font-weight="700"
+                        opacity="0.72"
+                        style="mix-blend-mode: luminosity; isolation: isolate;"
+                      >
+                        <tspan x="0.781" y="90">
+                          Skitte
+                        </tspan>
+                      </text>
+                      <path
+                        id="Path_1"
+                        data-name="Path 1"
+                        d="M1160.5,434.5l-41.119,25.416L1054.765,434.5l64.616-39.2v64.616"
+                        transform="translate(-481 6)"
+                        fill="none"
+                        stroke="#707070"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="4"
+                      ></path>
+                    </g>
+                  </svg>
